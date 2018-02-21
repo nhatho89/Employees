@@ -1,0 +1,39 @@
+{
+  "name": "Employees",
+  "version": "0.1.0",
+  "description": "TypeScript and Redux exercise",
+  "main": "index.js",
+  "scripts": {
+    "local": "node server/local-bootstrap",
+    "build": "rm -rf server/dist && babel server/src -d server/dist && cp server/src/db/*.json server/dist/db",
+    "prod": "node server/dist"
+  },
+  "author": "Andrew Levine",
+  "license": "MIT",
+  "dependencies": {
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "chalk": "^1.1.1",
+    "css-loader": "^0.28.9",
+    "flux": "^3.1.3",
+    "hapi": "^13.2.1",
+    "inert": "^3.2.0",
+    "joi": "^7.2.2",
+    "lodash": "^4.17.4",
+    "node-uuid": "^1.4.7",
+    "react": "^16.2.0",
+    "react-datepicker": "^1.0.4",
+    "react-dom": "^16.2.0",
+    "react-modal": "^3.1.11",
+    "style-loader": "^0.20.1",
+    "webpack": "^3.10.0"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.4.5",
+    "babel-plugin-transform-object-rest-spread": "^6.3.13",
+    "babel-preset-es2015-node": "^5.0.2",
+    "babel-register": "^6.4.3"
+  }
+}
